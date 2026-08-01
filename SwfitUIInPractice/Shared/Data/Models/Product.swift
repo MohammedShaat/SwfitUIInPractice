@@ -11,7 +11,7 @@ struct ProductsResult: Codable {
     let products: [Product]
 }
 
-struct Product: Codable, Identifiable {
+struct Product: Codable, Hashable, Identifiable {
     let id: Int
     let title: String
     let description: String
@@ -23,4 +23,10 @@ struct Product: Codable, Identifiable {
     let category: String
     let thumbnail: String
     let images: [String]
+}
+
+struct CategorizedProducts: Hashable, Identifiable {
+    let id = UUID().uuidString
+    let name: String
+    let products: [Product]
 }

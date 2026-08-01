@@ -13,10 +13,16 @@ struct WebImageHelperView: View {
     var contentMode: ContentMode = .fit
     
     var body: some View {
-        WebImage(url: URL(string: urlString))
-            .resizable()
-            .indicator(.activity)
-            .aspectRatio(contentMode: contentMode)
+        Rectangle()
+            .opacity(0)
+            .overlay {
+                WebImage(url: URL(string: urlString))
+                    .resizable()
+                    .indicator(.activity)
+                    .aspectRatio(contentMode: contentMode)
+                    .allowsTightening(false)
+            }
+            .clipped()
     }
 }
 
@@ -24,4 +30,5 @@ struct WebImageHelperView: View {
     WebImageHelperView(urlString: "https://picsum.photos/600/600")
         .clipShape(.rect(cornerRadius: 30))
         .padding()
+        .frame(width: 400, height: 400)
 }
