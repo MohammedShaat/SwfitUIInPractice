@@ -22,7 +22,10 @@ let sampleProducts: [Product] = [
         category: "beauty",
         thumbnail: "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
         images: [
-            "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp"
+//            "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
+            "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYUucytKnoWiHD62bM5QQw4Mr9v3EtPdCkw5GHJbu1S_aHkK1VcuvAPSYK6ga-E69pYcCVZSijhBQZlk3eN2pq6o-YXe1qXIL1zqaemoC4zkjff3DMbC7j6HTWzKBpG4zYM4QjLYc-&usqp=CAc",
+            "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTpRK6zGejMcI_5aTv3D5hVhHItF3BrD-lt31ljZaTRFmTsHxtY1miVrd6AT107mtQq-3NB1QiujfJVvVxrBKP4fzRWFylsfOeKFRgI-NBVieGi0EWcn2lNzHRTOXu2rvzN0kpcjQ&usqp=CAc",
+            "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQwh_Vu06Vr9ePbsiASWI3fxvpdoZYbTrBeeEH4L6gJf13ry5FLI_DZAlnQaOtRgMbmpJFtUCE8liFj_HpglknkVX_BULFceHB-q2FRkjtts7_mKilu9iuWu78fVS-lYCshw9uRPg&usqp=CAc",
         ]
     ),
     Product(
@@ -56,3 +59,17 @@ let sampleProducts: [Product] = [
         ]
     )
 ]
+
+let sampleUser = User(
+    id: 1,
+    firstName: "Olivia",
+    lastName: "John",
+    age: 31,
+    email: "olivia@gmail.com",
+    username: "olivia",
+    password: "123123",
+    phone: "+125841269841",
+    image: "https://picsum.photos/600",
+    height: 180.25,
+    weight: 70.8
+)
