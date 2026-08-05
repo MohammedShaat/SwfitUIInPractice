@@ -23,6 +23,34 @@ struct Product: Codable, Hashable, Identifiable {
     let category: String
     let thumbnail: String
     let images: [String]
+    let tags: [String]
+    
+    var recentlyAdded: Bool {
+//        .random()
+        false
+    }
+    var watchingProgress: Double {
+        .random(in: 0...1)
+    }
+    var isNew: Bool {
+        .random()
+    }
+    var year: Int {
+        .random(in: 2018...2026)
+    }
+    var seasons: Int {
+        .random(in: 1...4)
+    }
+    var isTop: Bool {
+//        .random()
+        true
+    }
+    var topRating: Int {
+        isTop ? .random(in: 1...10) : 0
+    }
+    var cast: [String] {
+        ["John Stathim", "Jack Ryan", "Will"]
+    }
 }
 
 struct CategorizedProducts: Hashable, Identifiable {

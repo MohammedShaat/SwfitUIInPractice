@@ -33,7 +33,7 @@ struct DatabaseHelper {
 #Playground {
     let db = DatabaseHelper()
     do {
-        _ = try await db.getProducts().count
+        _ = try await db.getProducts()
         _ = try await db.getUsers().count
     } catch {
         print(error)
