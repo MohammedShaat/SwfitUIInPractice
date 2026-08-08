@@ -27,7 +27,8 @@ struct Product: Codable, Hashable, Identifiable {
     
     var recentlyAdded: Bool {
 //        .random()
-        false
+//        false
+        title.contains("n")
     }
     var watchingProgress: Double {
         .random(in: 0...1)
@@ -42,8 +43,7 @@ struct Product: Codable, Hashable, Identifiable {
         .random(in: 1...4)
     }
     var isTop: Bool {
-//        .random()
-        true
+        .random()
     }
     var topRating: Int {
         isTop ? .random(in: 1...10) : 0

@@ -9,10 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-//        SpotifyHomeView()
-//        BumbleHomeView()
-        
-        NetflixHomeView()
+        TabView {
+            Tab("Spotify", image: "spotify") {
+                SpotifyHomeView()
+            }
+            
+            Tab("Bumble", image: "bumble") {
+                BumbleHomeView()
+            }
+            
+            Tab("Netflix", image: "netflix") {
+                NetflixHomeView()
+            }
+        }
     }
 }
 

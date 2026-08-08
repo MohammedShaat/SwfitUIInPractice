@@ -33,7 +33,6 @@ struct SpotifyPlaylistView: View {
                                 
                                 Color.clear
                                     .onChange(of: yOffset) {
-                                        print(yOffset)
                                         showingNavTitle = yOffset < 140 ? true : false
                                     }
                             })

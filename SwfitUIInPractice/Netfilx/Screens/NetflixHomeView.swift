@@ -137,7 +137,6 @@ struct NetflixHomeView: View {
                         category: hero.category,
                         brand: hero.brand ?? "",
                         onPlayCLick:  {
-                            print("Hero")
                             selectedProduct = hero
                         }
                     )
